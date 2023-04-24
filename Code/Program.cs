@@ -1,8 +1,8 @@
 ﻿string[] Input()
 {
     Console.Write("Введите данные массива через пробел: ");
-    string[] array = Console.ReadLine().Split(" ").ToArray();
-    return array;
+    string[] massive = Console.ReadLine().Split(" ").ToArray();
+    return massive;
 }
 void Print(string[] array)
 {
@@ -28,4 +28,9 @@ string[] Data(string[] array)
     }
     return output;
 }
-Input();
+string[] massive = Input();
+string[] output = Data(massive);
+Print(massive);
+Console.WriteLine();
+Console.WriteLine("Массив из строк, длина которых меньше, либо равна 3 символам");
+Print(output);
