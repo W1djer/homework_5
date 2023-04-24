@@ -1,8 +1,8 @@
 ﻿string[] Input()
 {
     Console.Write("Введите данные массива через пробел: ");
-    string[] massive = Console.ReadLine().Split(" ").ToArray();
-    return massive;
+    string[] array = Console.ReadLine().Split(" ").ToArray();
+    return array;
 }
 void Print(string[] array)
 {
